@@ -1,0 +1,32 @@
+potential ../../models/nep89/nep.txt
+minimize fire 1.0e-4 10000
+
+ensemble npt_scr 1200 1200 100 1 100 1000
+time_step      1
+dump_thermo    1000
+dump_exyz  	   1000
+run            1000000
+
+ensemble npt_scr 1200 1200 100 0.5 100 1000
+time_step      1
+dump_thermo    1000
+dump_exyz  	   1000
+run            1000000
+
+ensemble npt_scr 1200 1200 100 1.01325e-4 100 1000
+time_step      1
+dump_thermo    1000
+dump_exyz  	   1000
+run            1000000
+
+ensemble npt_scr 1200 1200 100 -0.5 100 1000
+time_step      1
+dump_thermo    1000
+dump_exyz  	   1000
+run            1000000
+
+ensemble npt_scr 1200 1200 100 -1 100 1000
+time_step      1
+dump_thermo    1000
+dump_exyz  	   1000
+run            1000000

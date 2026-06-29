@@ -1,0 +1,16 @@
+replicate 6 6 6
+potential   nep.txt
+minimize fire 1.0e-4 10000
+velocity 1000
+
+ensemble npt_scr 1000 1000 100 1.01325e-4 100 1000
+time_step 1
+dump_thermo 10000       				
+run 5000000
+
+ensemble nvt_bdp 1000 1000 100
+time_step 1
+dump_thermo 10000        				
+dump_xyz -1 1 10000 positions.xyz      	
+compute_msd 1000 7000 all_groups 0
+run 10000000

@@ -1,0 +1,17 @@
+fine_tune ../../models/nep89/nep.txt nep89_20250409.restart
+type 4 Li C O F
+# These cannot be changed:
+version    4
+zbl        2
+cutoff     6 5
+n_max      4 4
+basis_size 8 8
+l_max      4 2 1
+neuron     80
+# These can be changed:
+lambda_e   1
+lambda_f   1
+lambda_v   1
+batch      5000
+population 50
+generation 100000
