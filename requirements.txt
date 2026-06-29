@@ -1,0 +1,10 @@
+ase
+numpy
+scipy
+scikit-learn
+matplotlib
+umap-learn
+# Optional for descriptor generation in sample_structures.py:
+# NepTrain
+# Optional for ABACUS conversion:
+# dpdata
